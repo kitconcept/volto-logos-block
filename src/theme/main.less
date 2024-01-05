@@ -2,7 +2,7 @@
 @greySnow: #f3f5f7;
 @greySmoke: #e4e8ec;
 
-.block.logos {
+.content-area .block.logos {
   .grid-items [data-rbd-droppable-id] {
     display: flex;
   }
@@ -103,6 +103,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    a[href^="https://"]:not([href^="https://dlr-internet"]):not([href^="https://dlr.de"]):not([href^="https://www.dlr.de"])::after
+    {
+      display: none;
+      content: none;
+    }
 
     .logo-image {
       width: 100%;
