@@ -7,6 +7,20 @@
     display: flex;
   }
 
+  .ui.grid {
+    .column:first-of-type {
+      .logo-block {
+        align-self: flex-start;
+      }
+    }
+
+    .column:last-of-type {
+      .logo-block {
+        align-self: flex-end;
+      }
+    }
+  }
+
   // general spacing in the Row block wrapper
   & [class^='block-editor-'],
   [class^='block-editor-'].contained {
