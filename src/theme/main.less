@@ -7,6 +7,31 @@
     display: flex;
   }
 
+  .ui.grid {
+    .column {
+      &:first-of-type {
+        .logo-block {
+          align-self: flex-start;
+        }
+      }
+
+      &:last-of-type {
+        .logo-block {
+          align-self: flex-end;
+        }
+      }
+
+      @media only screen and (max-width: 769px) {
+        &:first-of-type,
+        &:last-of-type {
+          .logo-block {
+            align-self: unset;
+          }
+        }
+      }
+    }
+  }
+
   // general spacing in the Row block wrapper
   & [class^='block-editor-'],
   [class^='block-editor-'].contained {
@@ -77,7 +102,8 @@
     }
   }
 
-  .block.logo-block {
+  .block.logo-block,
+  .logo-block {
     display: flex;
     flex-direction: column;
     align-items: center;
