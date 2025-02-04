@@ -5,8 +5,7 @@ import { defineMessages, useIntl } from 'react-intl';
 import imageBlockSVG from '@plone/volto/components/manage/Blocks/Image/block-image.svg';
 import cx from 'classnames';
 import isEmpty from 'lodash/isEmpty';
-import ConditionalLink from '@plone/volto/components/manage/ConditionalLink/ConditionalLink';
-
+import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
 const messages = defineMessages({
   PleaseChooseLogo: {
     id: 'Please choose a logo as source for this element',
@@ -20,6 +19,7 @@ const View = (props) => {
   const logos = props?.data?.data;
   const logosSize = props?.data?.logo_size;
   const logos_container_width = props?.data?.logos_container_width;
+  console.log(logos);
 
   return (
     <div className="block logos">
@@ -42,10 +42,12 @@ const View = (props) => {
                   logoHref: '',
                   src: '',
                   srcAlt: '',
+                  openLinkInNewTab: '',
                 };
                 if (logo?.href?.length > 0) {
                   logoInfo.hrefTitle = logo.href[0]['title'];
                   logoInfo.href = flattenToAppURL(logo.href[0]['@id']);
+                  logoInfo.openLinkInNewTab = logo.openLinkInNewTab;
                 }
                 if (logo?.logo && logo.logo[0]?.image_scales) {
                   logoInfo.logoHref = logo.logo[0]['@id'];
@@ -65,15 +67,15 @@ const View = (props) => {
                 if (!logoInfo.src) return null;
 
                 return (
-                  <li className="item" key={logoInfo.href}>
+                  <li className="item" key={itemId}>
                     {/* @ts-ignore */}
-                    <ConditionalLink
-                      condition={logoInfo.href}
-                      to={logoInfo.href}
+                    <UniversalLink
+                      href={logoInfo.href}
+                      openLinkInNewTab={logoInfo.openLinkInNewTab}
                       title={logoInfo.hrefTitle || logoInfo.srcAlt}
                     >
                       <img src={logoInfo.src} alt={logoInfo.srcAlt} />
-                    </ConditionalLink>
+                    </UniversalLink>
                   </li>
                 );
               })
