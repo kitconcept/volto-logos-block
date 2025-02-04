@@ -1,10 +1,10 @@
-import { LogoBlockView, LogoBlockEdit } from './components';
-import { LogoBlockSchema } from './components/Logo/schema';
-
+import { Edit } from './components';
+import { layoutSchema } from './components/Logo/layoutSchema';
+import { LogoBlockView } from './components';
 import freedomSVG from '@plone/volto/icons/freedom.svg';
+import './theme/logo.scss';
 
-import './theme/main.less';
-
+import { BlocksObjectWidget } from './components/widgets';
 const applyConfig = (config) => {
   config.blocks.blocksConfig.logo = {
     id: 'logo',
@@ -12,26 +12,17 @@ const applyConfig = (config) => {
     group: 'common',
     icon: freedomSVG,
     view: LogoBlockView,
-    edit: LogoBlockEdit,
-    blockSchema: LogoBlockSchema,
-    restricted: true,
+    edit: Edit,
     mostUsed: true,
     sidebarTab: 1,
-    showDescriptionField: false,
+    blockSchema: layoutSchema,
+    blockHasOwnFocusManagement: true,
   };
-  config.blocks.blocksConfig.logos = {
-    ...config.blocks.blocksConfig.gridBlock,
-    id: 'logos',
-    title: 'Logos',
-    group: 'common',
-    mostUsed: true,
-    icon: freedomSVG,
-    allowedBlocks: ['logo'],
-    sidebarTab: 1,
-  };
-  config.blocks.blocksConfig.logos.blocksConfig = {
+
+  config.blocks.blocksConfig.logo.blocksConfig = {
     ...config.blocks.blocksConfig,
   };
+  config.widgets.type.logos = BlocksObjectWidget;
   return config;
 };
 

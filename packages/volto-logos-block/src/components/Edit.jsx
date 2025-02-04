@@ -1,5 +1,5 @@
 import React from 'react';
-import View from './View';
+import LogoBlockEdit from './Logo/Edit';
 import { SidebarPortal, BlockDataForm } from '@plone/volto/components';
 import config from '@plone/volto/registry';
 
@@ -10,7 +10,7 @@ const Edit = (props) => {
 
   return (
     <>
-      <View {...props} isEditMode />
+      <LogoBlockEdit {...props} />
       <SidebarPortal selected={selected}>
         <BlockDataForm
           {...props}
