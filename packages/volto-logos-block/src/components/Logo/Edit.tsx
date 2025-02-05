@@ -1,12 +1,24 @@
 import React from 'react';
 import View from './View';
 import { SidebarPortal, BlockDataForm } from '@plone/volto/components';
-import config from '@plone/volto/registry';
+import { layoutSchema } from './layoutSchema';
+import type { logoData } from '@kitconcept/volto-logos-block/types/Logo';
 
-const Edit = (props) => {
+interface logosEditProps {
+  '@type': string;
+  data: logoData;
+  block: string;
+  onChangeBlock: (blockId: string, newData: logoData) => void;
+  selected: boolean;
+}
+
+const Edit: React.FC<logosEditProps> = (props: {
+  data: logoData;
+  block: string;
+  onChangeBlock: (blockId: string, newData: logoData) => void;
+  selected: boolean;
+}) => {
   const { data, block, onChangeBlock, selected } = props;
-  const logoBlockConfig = config.blocks.blocksConfig.logo;
-  const schemaObject = logoBlockConfig.blockSchema(props);
 
   return (
     <>
@@ -16,10 +28,10 @@ const Edit = (props) => {
           {...props}
           data={data}
           block={block}
-          schema={schemaObject}
+          schema={layoutSchema(props)}
           onChangeBlock={onChangeBlock}
           formData={data}
-          onChangeField={(id, value) => {
+          onChangeField={(id: string, value: any) => {
             onChangeBlock(block, {
               ...data,
               [id]: value,

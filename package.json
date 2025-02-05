@@ -51,6 +51,7 @@
   "dependencies": {
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
+    "@plone/types": "workspace:*",
     "@kitconcept/volto-logos-block": "workspace:*"
   },
   "devDependencies": {

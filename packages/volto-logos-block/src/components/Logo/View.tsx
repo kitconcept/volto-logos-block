@@ -6,6 +6,7 @@ import imageBlockSVG from '@plone/volto/components/manage/Blocks/Image/block-ima
 import cx from 'classnames';
 import isEmpty from 'lodash/isEmpty';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
+import type { logoData } from '@kitconcept/volto-logos-block/types/Logo';
 const messages = defineMessages({
   PleaseChooseLogo: {
     id: 'Please choose a logo as source for this element',
@@ -13,13 +14,20 @@ const messages = defineMessages({
   },
 });
 
-const View = (props) => {
+interface logosViewProps {
+  '@type': string;
+  data: logoData;
+  isEditMode: boolean;
+}
+const View: React.FC<logosViewProps> = (props: {
+  data: logoData;
+  isEditMode: boolean;
+}) => {
   const intl = useIntl();
   const { isEditMode } = props;
   const logos = props?.data?.data;
   const logosSize = props?.data?.logo_size;
   const logos_container_width = props?.data?.logos_container_width;
-  console.log(logos);
 
   return (
     <div className="block logos">
@@ -36,14 +44,22 @@ const View = (props) => {
           {!isEmpty(logos?.blocks)
             ? logos.blocks_layout.items.map((itemId) => {
                 const logo = logos.blocks[itemId];
-                const logoInfo = {
+                const logoInfo: {
+                  hrefTitle: string;
+                  href: string;
+                  logoHref: string;
+                  src: string;
+                  srcAlt: string;
+                  openLinkInNewTab: boolean;
+                } = {
                   hrefTitle: '',
                   href: '',
                   logoHref: '',
                   src: '',
                   srcAlt: '',
-                  openLinkInNewTab: '',
+                  openLinkInNewTab: false,
                 };
+
                 if (logo?.href?.length > 0) {
                   logoInfo.hrefTitle = logo.href[0]['title'];
                   logoInfo.href = flattenToAppURL(logo.href[0]['@id']);
