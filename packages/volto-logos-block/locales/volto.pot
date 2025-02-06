@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2025-02-04T11:51:42.766Z\n"
+"POT-Creation-Date: 2025-02-06T14:06:03.289Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -96,11 +96,6 @@ msgstr ""
 #. Default: "Logo size"
 #: components/Logo/layoutSchema
 msgid "logo_size"
-msgstr ""
-
-#. Default: "Container width"
-#: components/Logo/layoutSchema
-msgid "logos_container_width"
 msgstr ""
 
 #. Default: "Small"

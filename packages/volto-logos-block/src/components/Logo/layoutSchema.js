@@ -50,10 +50,6 @@ const messages = defineMessages({
     id: 'logo_size',
     defaultMessage: 'Logo size',
   },
-  logos_container_width: {
-    id: 'logos_container_width',
-    defaultMessage: 'Container width',
-  },
 });
 
 const logoSchema = (props) => {
@@ -116,7 +112,7 @@ export const layoutSchema = (props) => {
       {
         id: 'default',
         title: intl.formatMessage(messages.Default),
-        fields: ['logo_size', 'logos_container_width', 'data'],
+        fields: ['logo_size', 'data'],
       },
     ],
     properties: {
@@ -134,10 +130,6 @@ export const layoutSchema = (props) => {
           ['l', intl.formatMessage(messages.Large)],
         ],
         default: 's',
-      },
-      logos_container_width: {
-        title: intl.formatMessage(messages.logos_container_width),
-        type: 'string',
       },
     },
     required: ['data'],

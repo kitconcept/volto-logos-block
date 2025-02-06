@@ -96,11 +96,6 @@ msgstr ""
 msgid "logo_size"
 msgstr ""
 
-#. Default: "Container width"
-#: components/Logo/layoutSchema
-msgid "logos_container_width"
-msgstr ""
-
 #. Default: "Small"
 #: components/Logo/layoutSchema
 msgid "small"

@@ -27,15 +27,10 @@ const View: React.FC<logosViewProps> = (props: {
   const { isEditMode } = props;
   const logos = props?.data?.data;
   const logosSize = props?.data?.logo_size;
-  const logos_container_width = props?.data?.logos_container_width;
 
   return (
     <div className="block logos">
-      <Container
-        className={cx({
-          [logos_container_width]: 1,
-        })}
-      >
+      <Container>
         <ul
           className={cx('footer-logos', {
             [logosSize]: logosSize,
