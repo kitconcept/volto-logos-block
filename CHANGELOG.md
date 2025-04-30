@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 2.0.0 (2025-04-30)
+
+### Internal
+
+- Release final version of 2.0.0 @sneridagh 
+
 ## 2.0.0-alpha.1 (2024-01-23)
 
 ### Bugfix
