@@ -27,7 +27,8 @@
     "release-alpha": "release-it --preRelease=alpha"
   },
   "dependencies": {
-    "@plone/components": "workspace:*"
+    "@plone/components": "workspace:*",
+    "@kitconcept/volto-light-theme": "workspace:*"
   },
   "peerDependencies": {
     "classnames": "2.5.1",
