@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 3.0.0-alpha.1 (2025-07-23)
+
+### Feature
+
+- Added Spanish translation @macagua [#24](https://github.com/kitconcept/volto-logos-block/issue/24)
+
 ## 3.0.0-alpha.0 (2025-04-30)
 
 ### Breaking
