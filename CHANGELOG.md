@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 3.0.0-alpha.2 (2025-10-22)
+
+### Internal
+
+- Fixed imports. @sneridagh 
+
 ## 3.0.0-alpha.1 (2025-07-23)
 
 ### Feature
