@@ -54,7 +54,7 @@ module.exports = {
           ['@plone/registry', `${coreLocation}/packages/registry/src`],
           [
             '@kitconcept/volto-light-theme',
-            `${projectRootPath}/../volto-light-theme/frontend/packages/volto-light-theme/src`,
+            `${projectRootPath}/packages/volto-light-theme/frontend/packages/volto-light-theme/src`,
           ],
           [
             '@kitconcept/volto-logos-block',
