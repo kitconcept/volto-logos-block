@@ -3,7 +3,7 @@ import LogoBlockView from './components/View';
 import LogoBlockEdit from './components/Edit';
 import freedomSVG from '@plone/volto/icons/freedom.svg';
 import type { ConfigType } from '@plone/registry';
-import type { BlocksObjectWidgetProps } from '@kitconcept/volto-light-theme/components/Widgets/BlocksObjectWidget';
+import type { BlocksObjectWidgetProps } from '@kitconcept/volto-light-theme/components/Widgets/BlocksObject';
 import type { BlockConfigBase } from '@plone/types';
 import type { Logo } from '@kitconcept/volto-light-theme/types';
 

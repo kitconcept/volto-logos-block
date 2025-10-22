@@ -44,6 +44,9 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
+      typescript: {
+        project: `${projectRootPath}/packages/volto-logos-block/tsconfig.json`,
+      },
       alias: {
         map: [
           ['@plone/volto', `${coreLocation}/packages/volto/src`],
