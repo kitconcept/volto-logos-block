@@ -44,6 +44,9 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
+      typescript: {
+        project: `${projectRootPath}/packages/volto-logos-block/tsconfig.json`,
+      },
       alias: {
         map: [
           ['@plone/volto', `${coreLocation}/packages/volto/src`],
@@ -51,7 +54,7 @@ module.exports = {
           ['@plone/registry', `${coreLocation}/packages/registry/src`],
           [
             '@kitconcept/volto-light-theme',
-            `${projectRootPath}/../volto-light-theme/frontend/packages/volto-light-theme/src`,
+            `${projectRootPath}/packages/volto-light-theme/frontend/packages/volto-light-theme/src`,
           ],
           [
             '@kitconcept/volto-logos-block',
