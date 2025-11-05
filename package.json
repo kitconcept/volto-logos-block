@@ -52,8 +52,18 @@
       "@types/react": "^18.3.3",
       "@types/react-dom": "^18.3.3"
     },
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher"
+    ],
     "onlyBuiltDependencies": [
-      "lightningcss-cli"
+      "core-js",
+      "core-js-pure",
+      "cypress",
+      "es5-ext",
+      "esbuild",
+      "full-icu",
+      "lightningcss-cli",
+      "unrs-resolver"
     ]
   },
   "packageManager": "pnpm@10.18.3"
