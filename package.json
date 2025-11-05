@@ -36,9 +36,9 @@
     "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
   "dependencies": {
-    "@plone/volto": "workspace:*",
+    "@kitconcept/volto-logos-block": "workspace:*",
     "@plone/registry": "workspace:*",
-    "@kitconcept/volto-logos-block": "workspace:*"
+    "@plone/volto": "workspace:*"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"
@@ -46,11 +46,11 @@
   "pnpm": {
     "overrides": {
       "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
-      "react-refresh": "^0.14.2"
+      "react-refresh": "^0.14.2",
+      "@types/node": "^24"
     },
     "ignoredBuiltDependencies": [
-      "@parcel/watcher",
-      "why"
+      "@parcel/watcher"
     ],
     "onlyBuiltDependencies": [
       "core-js",
@@ -59,9 +59,7 @@
       "es5-ext",
       "esbuild",
       "full-icu",
-      "lightningcss-cli",
-      "sharp",
-      "unrs-resolver"
+      "lightningcss-cli"
     ]
   },
   "packageManager": "pnpm@10.18.3"
