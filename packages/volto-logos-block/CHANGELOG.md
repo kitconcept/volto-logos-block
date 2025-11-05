@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0-alpha.0 (2025-11-05)
+
+### Breaking
+
+- Use Volto 19 and VLT8. @sneridagh 
+
 ## 3.0.0 (2025-11-05)
 
 ## 3.0.0-alpha.2 (2025-10-22)
