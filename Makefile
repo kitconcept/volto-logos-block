@@ -93,7 +93,7 @@ test: ## Run unit tests
 ci-test: ## Run unit tests in CI
 	# Unit Tests need the i18n to be built
 	VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n
-	CI=1 pnpm test -- --passWithNoTests
+	CI=1 pnpm test --passWithNoTests
 
 .PHONY: backend-docker-start
 backend-docker-start:	## Starts a Docker-based backend for development
@@ -131,8 +131,8 @@ ci-acceptance-backend-start: ## Start backend acceptance server in headless mode
 
 .PHONY: acceptance-test
 acceptance-test: ## Start Cypress in interactive mode
-	pnpm --filter @plone/volto exec cypress open --config-file $(CURRENT_DIR)/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}'
+	pnpm --filter @plone/volto exec cypress open --config-file $(CURRENT_DIR)/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}',supportFile=$(CURRENT_DIR)'/cypress/support/e2e.js'
 
 .PHONY: ci-acceptance-test
 ci-acceptance-test: ## Run cypress tests in headless mode for CI
-	pnpm --filter @plone/volto exec cypress run --config-file $(CURRENT_DIR)/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}'
+	pnpm --filter @plone/volto exec cypress run --config-file $(CURRENT_DIR)/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}',supportFile=$(CURRENT_DIR)'/cypress/support/e2e.js'

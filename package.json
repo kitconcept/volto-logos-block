@@ -38,7 +38,9 @@
   "dependencies": {
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
-    "@kitconcept/volto-logos-block": "workspace:*"
+    "@kitconcept/volto-logos-block": "workspace:*",
+    "@kitconcept/volto-light-theme": "workspace:*",
+    "@kitconcept/volto-bm3-compat": "1.0.0-alpha.1"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"
@@ -47,7 +49,10 @@
     "overrides": {
       "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
       "react-refresh": "^0.14.2"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "lightningcss-cli"
+    ]
   },
-  "packageManager": "pnpm@9.4.0"
+  "packageManager": "pnpm@10.18.3"
 }
