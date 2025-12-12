@@ -1557,9 +1557,6 @@ importers:
 
   packages/volto-logos-block:
     dependencies:
-      '@kitconcept/volto-light-theme':
-        specifier: workspace:*
-        version: link:../volto-light-theme/frontend/packages/volto-light-theme
       classnames:
         specifier: 2.5.1
         version: 2.5.1
