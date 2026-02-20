@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-10T08:33:10.828Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"Language: pt_BR\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Language-Code: pt_BR\n"
+"Language-Name: Português do Brasil\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: volto\n"
+
+#. Default: "Add logo"
+#: components/schema
+msgid "Add logo"
+msgstr "Adicionar logotipo"
+
+#. Default: "Alt text"
+#: components/schema
+msgid "Alt text"
+msgstr "Texto alternativo"
+
+#. Default: "Description"
+#: components/schema
+msgid "Description"
+msgstr "Descrição"
+
+#. Default: "Headline"
+#: components/schema
+msgid "Headline"
+msgstr "Título"
+
+#. Default: "Hide description"
+#: components/schema
+msgid "Hide description"
+msgstr "Ocultar descrição"
+
+#. Default: "Logo"
+#: components/schema
+msgid "Logo"
+msgstr "Logotipo"
+
+#. Default: "Logo image"
+#: components/schema
+msgid "Logo image"
+msgstr "Imagem do logotipo"
+
+#. Default: "Logos"
+#: components/schema
+msgid "Logos"
+msgstr "Logotipos"
+
+#. Default: "Logos Container Width"
+#: components/schema
+msgid "Logos Container Width"
+msgstr "Largura do contêiner de logotipos"
+
+#. Default: "Logos Size"
+#: components/schema
+msgid "Logos Size"
+msgstr "Tamanho dos logotipos"
+
+#. Default: "Open in a new tab"
+#: components/schema
+msgid "Open in a new tab"
+msgstr "Abrir em nova aba"
+
+#. Default: "Please set logos as source for this block"
+#: components/Edit
+msgid "Please set logos as source for this block"
+msgstr "Por favor, defina logotipos como fonte para este bloco"
+
+#. Default: "Settings"
+#: components/schema
+msgid "Settings"
+msgstr "Configurações"
+
+#. Default: "Target"
+#: components/schema
+msgid "Target"
+msgstr "Destino"
+
+#. Default: "Title"
+#: components/schema
+msgid "Title"
+msgstr "Título"
+
+#. Default: "Large"
+#: components/schema
+msgid "large"
+msgstr "Grande"
+
+#. Default: "Small"
+#: components/schema
+msgid "small"
+msgstr "Pequeno"
