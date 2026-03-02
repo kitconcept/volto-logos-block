@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0-alpha.1 (2026-03-02)
+
+### Feature
+
+- Added pt-br translations. @humanaice [#36](https://github.com/kitconcept/volto-logos-block/issue/36)
+
 ## 4.0.0-alpha.0 (2025-11-05)
 
 ### Breaking
