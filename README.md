@@ -203,11 +203,10 @@ make acceptance-test
 
 The project is licensed under the MIT license.
 
-## Credits and Acknowledgements 🙏
+## Credits
 
-![phpThumb_generated_thumbnail](https://github.com/kitconcept/volto-logos-block/assets/44289551/3b2ca2ad-3b85-4a2c-9e86-55eda2689374)
+<img alt="Deutsches Zentrum für Luft- und Raumfahrt" src="https://github.com/kitconcept/volto-slider-block/raw/main/dlr.svg" width="230px" />
 
-The development of this plugin has been kindly sponsored by [Deutsches Zentrum für Luft- und Raumfahrt (DLR)](https://www.dlr.de/de).
+The development of this plugin has been kindly sponsored by the [German Aerospace Center (DLR)](https://dlr.de).
 
-Crafted with care by **Generated using [Cookieplone (0.8.2)](https://github.com/plone/cookieplone) and [cookiecutter-plone (d9b5293)](https://github.com/plone/cookiecutter-plone/commit/d9b52933cbc6efd137e93e35a270214e307359f0) on 2025-01-17 17:05:27.327585**. A special thanks to all contributors and supporters!
 
