@@ -39,8 +39,8 @@
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
     "@kitconcept/volto-logos-block": "workspace:*",
-    "@kitconcept/volto-light-theme": "workspace:*",
-    "@kitconcept/volto-bm3-compat": "1.0.0-alpha.1"
+    "@kitconcept/volto-bm3-compat": "1.0.0-alpha.1",
+    "@kitconcept/volto-light-theme": "8.0.0-alpha.32"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"
