@@ -6,26 +6,8 @@ export default defineConfig({
   ...voltoVitestConfig,
   resolve: {
     alias: {
-      ...voltoVitestConfig.resolve.alias,
-      // Alias for absolute imports
-      '@kitconcept/volto-logos-block': path.resolve(__dirname, './src'),
-      '@kitconcept/volto-logos-block/': path.resolve(__dirname, './src/'),
-      '@kitconcept/volto-light-theme': path.resolve(
-        __dirname,
-        '../volto-light-theme/frontend/packages/volto-light-theme/src',
-      ),
-      '@kitconcept/volto-light-theme/': path.resolve(
-        __dirname,
-        '../volto-light-theme/frontend/packages/volto-light-theme/src/',
-      ),
-    },
-  },
-  server: {
-    fs: {
-      allow: [
-        '..',
-        path.resolve(__dirname, '../../../../../core/packages/volto'),
-      ],
+      '@plone/volto': path.resolve(__dirname, '../../core/packages/volto/src'), // Add paths accordingly
+      // 'promise-file-reader': require.resolve('promise-file-reader') // Add to identify dependency from package
     },
   },
 });
