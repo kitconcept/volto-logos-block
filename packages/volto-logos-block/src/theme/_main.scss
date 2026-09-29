@@ -9,8 +9,13 @@
 }
 
 //Hide the external link logo when used with VLT
-.content-area .block.logos a.external::after {
-  content: none;
+.content-area .ui.container,
+.content-area #page-edit .ui.container,
+.content-area .q.container,
+.content-area .a.container {
+  .block.logos a.external::after {
+    content: none;
+  }
 }
 
 .block.logos {
