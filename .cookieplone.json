@@ -1,0 +1,14 @@
+{
+    "title": "Logos Block",
+    "frontend_addon_name": "volto-logos-block",
+    "description": "A logos block for volto",
+    "author": "kitconcept, GmbH",
+    "email": "info@kitconcept.com",
+    "github_organization": "kitconcept",
+    "npm_package_name": "@kitconcept/volto-logos-block",
+    "use_prerelease_versions": "No",
+    "volto_version": "19.4.1",
+    "initialize_ci": true,
+    "initialize_documentation": false,
+    "__template__": "frontend_addon"
+}
