@@ -8,6 +8,18 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.1 (2026-10-01)
+
+
+### Bugfix
+
+- Hide external-link icons on logos @iRohitSingh 
+
+
+### Internal
+
+- Re-apply the latest cookieplone frontend_addon template, add `.cookieplone.json` answers file, and fix the build by removing the `lodash` pin that caused a duplicated `@kitconcept/volto-light-theme` install. @sneridagh 
+
 ## 4.0.0 (2026-09-16)
 
 ### Internal

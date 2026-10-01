@@ -1,1 +1,0 @@
-Re-apply the latest cookieplone frontend_addon template, add `.cookieplone.json` answers file, and fix the build by removing the `lodash` pin that caused a duplicated `@kitconcept/volto-light-theme` install. @sneridagh
