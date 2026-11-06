@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.0 (2026-11-06)
+
+
+### Feature
+
+- Added support for the `@blocks-schema` endpoint of Volto 19.6. The logos block now has its own documentation, which agents and generated reference docs can read, and its settings form saves changes through a data adapter. The block requires Volto 19.6 or later. @ericof [#41](https://github.com/kitconcept/volto-logos-block/issues/41)
+
 ## 4.0.1 (2026-10-01)
 
 
