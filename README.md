@@ -20,6 +20,8 @@ The logos block matches the style of the existing Logos footer slot in VLT 6.
 > This package depends on `@kitconcept/volto-light-theme` and Volto 18 or later.
 > It could be used without it, but you would have to provide your own block's view component and the logos container styling.
 
+`@blocks-schema` support (the block schema and documentation published by the Volto server) requires Volto 19.6 or later. The add-on keeps working on older Volto 19 without it.
+
 
 ## Features
 

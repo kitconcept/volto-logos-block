@@ -1,4 +1,5 @@
 import { LogosBlockSchema } from './components/schema';
+import { LogosBlockDataAdapter } from './components/dataAdapter';
 import LogoBlockView from './components/View';
 import LogoBlockEdit from './components/Edit';
 import freedomSVG from '@plone/volto/icons/freedom.svg';
@@ -34,6 +35,7 @@ const applyConfig = (config: ConfigType) => {
     mostUsed: true,
     sidebarTab: 1,
     blockSchema: LogosBlockSchema,
+    dataAdapter: LogosBlockDataAdapter,
   };
 
   return config;

@@ -3,6 +3,7 @@ import { defineMessages, useIntl } from 'react-intl';
 import SidebarPortal from '@plone/volto/components/manage/Sidebar/SidebarPortal';
 import { BlockDataForm } from '@plone/volto/components/manage/Form';
 import { LogosBlockSchema } from './schema';
+import { LogosBlockDataAdapter } from './dataAdapter';
 import View from './View';
 import type { BlockEditProps } from '@plone/types';
 import imageBlockSVG from '@plone/volto/components/manage/Blocks/Image/block-image.svg';
@@ -32,13 +33,16 @@ const Edit = (props: BlockEditProps) => {
           {...props}
           data={data}
           block={block}
-          schema={LogosBlockSchema({ props, intl })}
+          schema={LogosBlockSchema({ intl })}
           onChangeBlock={onChangeBlock}
           formData={data}
           onChangeField={(id: string, value: any) => {
-            onChangeBlock(block, {
-              ...data,
-              [id]: value,
+            LogosBlockDataAdapter({
+              block,
+              data,
+              id,
+              onChangeBlock,
+              value,
             });
           }}
         />

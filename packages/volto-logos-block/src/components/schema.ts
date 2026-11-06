@@ -1,5 +1,4 @@
 import { type IntlShape, defineMessages } from 'react-intl';
-import type { BlockEditProps } from '@plone/types';
 
 const messages = defineMessages({
   Small: {
@@ -68,13 +67,7 @@ const messages = defineMessages({
   },
 });
 
-const logoSchema = ({
-  props,
-  intl,
-}: {
-  props: BlockEditProps;
-  intl: IntlShape;
-}) => {
+const logoSchema = ({ intl }: { intl: IntlShape }) => {
   return {
     title: intl.formatMessage(messages.item),
     addMessage: intl.formatMessage(messages.addLogo),
@@ -118,13 +111,15 @@ const logoSchema = ({
   };
 };
 
-export const LogosBlockSchema = ({
-  props,
-  intl,
-}: {
-  props: BlockEditProps;
-  intl: IntlShape;
-}) => {
+/**
+ * The schema of the logos block data. Only `intl` is used, so the
+ * `@blocks-schema` endpoint can resolve it outside the editor.
+ *
+ * @param {object} args - The arguments passed by Volto.
+ * @param {IntlShape} args.intl - The react-intl object used for the titles.
+ * @returns {object} The block schema.
+ */
+export const LogosBlockSchema = ({ intl }: { intl: IntlShape }) => {
   return {
     title: intl.formatMessage(messages.logos),
     fieldsets: [
@@ -138,7 +133,7 @@ export const LogosBlockSchema = ({
       logos: {
         title: intl.formatMessage(messages.logos),
         widget: 'object_list',
-        schema: logoSchema({ props, intl }),
+        schema: logoSchema({ intl }),
         default: [],
       },
 
