@@ -17,7 +17,7 @@ The Volto Logos Block allows editors to add a row of up to 6 logos to a page. Th
 The logos block matches the style of the existing Logos footer slot in VLT 6.
 
 > [!WARNING]
-> This package depends on `@kitconcept/volto-light-theme` and Volto 18 or later.
+> This package depends on `@kitconcept/volto-light-theme` and Volto 19.6 or later.
 > It could be used without it, but you would have to provide your own block's view component and the logos container styling.
 
 
