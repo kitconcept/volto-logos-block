@@ -1,8 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { createIntl } from 'react-intl';
 import { LogosBlockSchema } from './schema';
 
-const intl = createIntl({ locale: 'en', messages: {} });
+// The schema only calls intl.formatMessage, so a stub with the default
+// messages is enough. react-intl is a peer dependency, not a dev dependency.
+const intl = {
+  formatMessage: ({ defaultMessage }: { defaultMessage: string }) =>
+    defaultMessage,
+} as any;
 
 describe('LogosBlockSchema', () => {
   it('resolves with only intl, as the @blocks-schema endpoint calls it', () => {
